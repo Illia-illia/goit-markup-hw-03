@@ -5,12 +5,20 @@
   --main-text: #212121;
   --secondary-text: #757575;
   --secondary-back: #2f303a;
+  --secbtn-color:#188ce8;
+  --adress-color:rgba(255, 255, 255, 0.6);
 }
 
-body,
-body.body {
+body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+}
+
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 /* Off style link */
@@ -20,6 +28,18 @@ body.body {
 /* Off style list */
 .list {
   list-style-type: none;
+}
+
+/* margin off */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
 }
 
 /* ===========HEADER=========== */
@@ -79,9 +99,13 @@ body.body {
 /*Hero section*/
 .hero {
   background-color: var(--secondary-back);
+  padding: 200px 0;
+  margin-bottom: 94px;
+
 }
 
-.hero .hero-capt {
+.hero-capt {
+  
   color: var(--secondary-accent);
 
   font-weight: 900;
@@ -90,6 +114,10 @@ body.body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  max-width: 700px;
+  padding-bottom: 30px;
+  margin: 0 auto;
 }
 
 /* Button */
@@ -97,17 +125,20 @@ body.body {
   background: var(--link-accent);
   color: var(--secondary-accent);
 
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
 }
+
 .btn:hover,
 .btn:focus {
-  background-color: #188ce8;
+  background-color: var(--secbtn-color);
 }
 
 /*cant see */
@@ -125,12 +156,18 @@ body.body {
 }
 
 /* =========Section our advantage========== */
-.item-caption {
+.our-advantage{
+  margin-bottom: 94px;
+}
+
+.item-caption{
   color: var(--main-text);
 
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  padding-bottom: 10px;
 }
 
 .item-text {
@@ -139,20 +176,34 @@ body.body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
+
+  max-width: 270px;
 }
 
 /* What we do */
+.what-we-do{
+  margin-bottom: 94px;
+}
+
 .section-caption {
   color: var(--main-text);
 
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  padding-bottom: 50px;
 }
 
 /* Section our team */
 .team {
   background-color: #f5f4fa;
+}
+
+.item-team{
+  width: 270px;
+  height: 368px;
+  background-color: var(--secondary-accent);
 }
 
 .team-caption {
@@ -161,6 +212,7 @@ body.body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  padding: 0 auto;
 }
 
 .team-text {
@@ -186,7 +238,7 @@ body.body {
 }
 
 .link.adress {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-color);
 }
 
 .link.adress:hover,
@@ -201,7 +253,6 @@ body.body {
   background: #f5f4fa;
   color: var(--main-text);
 
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
