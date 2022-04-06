@@ -1,0 +1,232 @@
+:root {
+  --link-accent: #2196f3;
+  --firstly-accent: #000000;
+  --secondary-accent: #ffffff;
+  --main-text: #212121;
+  --secondary-text: #757575;
+  --secondary-back: #2f303a;
+}
+
+body,
+body.body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Off style link */
+.link {
+  text-decoration: none;
+}
+/* Off style list */
+.list {
+  list-style-type: none;
+}
+
+/* ===========HEADER=========== */
+
+/* Logo */
+.logo {
+  color: var(--link-accent);
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* Logo accent */
+.logo-firstly {
+  color: var(--firstly-accent);
+}
+
+.logo-secondary {
+  color: var(--secondary-accent);
+}
+
+/* Menu nav */
+.header-list .link {
+  color: var(--main-text);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Contacts */
+.contacts .link {
+  color: var(--secondary-text);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/*Active */
+.link.active {
+  color: var(--link-accent);
+}
+
+.header-list .link:hover,
+.header-list .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--link-accent);
+}
+
+/* ===========HERO=========== */
+
+/*Hero section*/
+.hero {
+  background-color: var(--secondary-back);
+}
+
+.hero .hero-capt {
+  color: var(--secondary-accent);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.btn {
+  background: var(--link-accent);
+  color: var(--secondary-accent);
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
+/*cant see */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* =========Section our advantage========== */
+.item-caption {
+  color: var(--main-text);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.item-text {
+  color: var(--secondary-text);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* What we do */
+.section-caption {
+  color: var(--main-text);
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Section our team */
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-caption {
+  color: var(--main-text);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-text {
+  color: var(--secondary-text);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* =============FOOTER====================== */
+.footer {
+  background-color: var(--secondary-back);
+}
+
+.item-adress .link {
+  color: var(--secondary-accent);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.link.adress {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link.adress:hover,
+.link.adress:focus,
+.item-adress .link:hover,
+.item-adress .link:focus {
+  color: var(--link-accent);
+}
+
+/* ==========Portfolio =================*/
+.list .item-btn {
+  background: #f5f4fa;
+  color: var(--main-text);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.item-btn:hover,
+.item-btn:focus {
+  background: var(--link-accent);
+  color: var(--secondary-accent);
+}
+
+.gallery-capt {
+  color: var(--main-text);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery-text {
+  color: var(--secondary-text);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
