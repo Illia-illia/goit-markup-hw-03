@@ -204,6 +204,13 @@ ul {
   width: 270px;
   height: 368px;
   background-color: var(--secondary-accent);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-padding{
+  text-align: center;
+  padding: 30px;
+
 }
 
 .team-caption {
@@ -212,7 +219,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  padding: 0 auto;
 }
 
 .team-text {
@@ -222,6 +228,8 @@ ul {
   font-size: 16px;
   line-height: 1.19;
 }
+
+
 
 /* =============FOOTER====================== */
 .footer {
