@@ -14,23 +14,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.container{
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  outline: 2px solid tomato;
-}
-
 /* Off style link */
 .link {
   text-decoration: none;
 }
+
 /* Off style list */
 .list {
   list-style-type: none;
 }
 
-/* margin off */
+/* margin-padding off */
 h1,
 h2,
 h3,
@@ -40,7 +34,18 @@ h6,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
 
 /* ===========HEADER=========== */
 
@@ -70,7 +75,10 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-right: 50px;
 }
+
 
 /* Contacts */
 .contacts .link {
@@ -99,8 +107,12 @@ ul {
 /*Hero section*/
 .hero {
   background-color: var(--secondary-back);
-  padding: 200px 0;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-bottom: 94px;
+
+  text-align: center;
 
 }
 
@@ -111,7 +123,6 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
