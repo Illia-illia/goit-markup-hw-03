@@ -48,6 +48,16 @@ ul {
 
 
 /* ===========HEADER=========== */
+.hedflex {
+  display: flex;
+  align-items: center;
+}
+.header-list{
+  display: flex;
+}
+.hed-item:not(:last-child){
+  margin-right: 50px;
+}
 
 /* Logo */
 .logo {
@@ -56,6 +66,8 @@ ul {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
+
+  margin-right: 93px;
 }
 
 /* Logo accent */
@@ -76,7 +88,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  padding-right: 50px;
 }
 
 
@@ -103,6 +114,7 @@ ul {
 }
 
 /* ===========HERO=========== */
+
 
 /*Hero section*/
 .hero {
