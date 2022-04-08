@@ -260,7 +260,7 @@ display: flex;
 }
 
 .what-item{
-  flex-basis: calc(100% / 3 - --padding30);
+  flex-basis: calc(100% / 3 - var(--padding30));
   margin-right: var(--padding30);
 }
 
@@ -284,7 +284,7 @@ display: flex;
 }
 
 .item-team{
-  flex-basis: calc(100% / 4 - --padding30);
+  flex-basis: calc(100% / 4 - var(--padding30));
   margin-right: var(--padding30);
   width: 270px;
   height: 368px;
@@ -406,8 +406,8 @@ margin-bottom: 20px;
 .gallery-item{
   flex-basis: calc(100% / 3 - calc(-1 * var(--padding30)));
   margin-right: calc(-1 * var(--padding30));
-  margin-bottom: 3calc(-1 * var(--padding30));
-  border: 1px solid var(--sec-border-accent);
+  margin-bottom: calc(-1 * var(--padding30));
+  border: 1px solid var(--sec-border-accent)
 }
 
 .gallery-ptext{
