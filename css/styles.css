@@ -45,31 +45,25 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 
 /* ===========HEADER=========== */
+
 .header-flex {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-accent);
 }
 
-.header-list{
-  display: flex;
-}
-
-.header-item:not(:last-child){
-  margin-right: 50px;
-}
-
 /* Logo */
-.header-logo{
-margin-right: 93px;
+.header-logo {
+  margin-right: 93px;
 }
 
-.header-logo,.footer-logo {
+.header-logo,
+.footer-logo {
   color: var(--link-accent);
 
   font-family: 'Raleway', sans-serif;
@@ -83,11 +77,15 @@ margin-right: 93px;
 
 }
 
-.logo-secondary {
-  color: var(--secondary-accent);
+/* Menu nav */
+.header-list {
+  display: flex;
 }
 
-/* Menu nav */
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-list .link {
   color: var(--main-text);
 
@@ -135,8 +133,6 @@ margin-left: auto;
 
 /* ===========HERO=========== */
 
-
-/*Hero section*/
 .hero {
   background-color: var(--secondary-back);
 
@@ -184,6 +180,12 @@ margin-left: auto;
   background-color: var(--secbtn-color);
 }
 
+/* =========Section our advantage========== */
+
+.our-advantage{
+  margin-bottom: 94px;
+}
+
 /*cant see */
 .visually-hidden {
   position: absolute;
@@ -196,11 +198,6 @@ margin-left: auto;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-/* =========Section our advantage========== */
-.our-advantage{
-  margin-bottom: 94px;
 }
 
 .advantage-list{
@@ -232,6 +229,7 @@ display: flex;
 }
 
 /* =============What we do=================== */
+
 .what-we-do{
   margin-bottom: 94px;
 }
@@ -261,7 +259,8 @@ display: flex;
   padding: 0;
 }
 
-/* Section our team */
+/* ==========Section our team ===================*/
+
 .team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
@@ -306,6 +305,7 @@ display: flex;
 
 
 /* =============FOOTER====================== */
+
 .footer {
   background-color: var(--secondary-back);
   padding-top: 60px;
@@ -314,6 +314,10 @@ display: flex;
 .footer-logo{
 display: block;
 margin-bottom: 20px;
+}
+
+.logo-secondary {
+  color: var(--secondary-accent);
 }
 
 .item-adress .link {
@@ -340,6 +344,7 @@ margin-bottom: 20px;
 }
 
 /* ==========Portfolio =================*/
+
 .our-works{
   margin-top: 94px;
   margin-bottom: 94px;
@@ -355,7 +360,7 @@ margin-bottom: 20px;
   margin-right: 8px;
 }
 
-.list .item-btn {
+.item-btn {
   background: var(--back-button);
   color: var(--main-text);
 
