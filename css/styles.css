@@ -404,9 +404,9 @@ margin-bottom: 20px;
 }
 
 .gallery-item{
-  flex-basis: calc(100% / 3 - calc(-1 * var(--padding30)));
-  margin-right: calc(-1 * var(--padding30));
-  margin-bottom: calc(-1 * var(--padding30));
+  flex-basis: calc(100% / 3 - var(--padding30));
+  margin-right: var(--padding30);
+  margin-bottom: var(--padding30);
   border: 1px solid var(--sec-border-accent)
 }
 
