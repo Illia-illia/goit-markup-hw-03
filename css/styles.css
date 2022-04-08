@@ -9,6 +9,13 @@
   --adress-color:rgba(255, 255, 255, 0.6);
   --border-accent:#ECECEC;
   --back-button:#f5f4fa;
+  --sec-border-accent: #EEEEEE;
+  --margin50:50px;
+  --padding30:30px;
+  --padding32: 32px;
+  --padding60:60px;
+  --padding94:94px;
+  --padding200:200px;
 }
 
 body {
@@ -83,7 +90,7 @@ ul {
 }
 
 .header-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: var(--margin50);
 }
 
 .header-list .link {
@@ -95,8 +102,8 @@ ul {
   letter-spacing: 0.02em;
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: var(--padding32);
+  padding-bottom: var(--padding32);
 }
 
 
@@ -107,7 +114,7 @@ margin-left: auto;
 }
 
 .contacts-item:not(:last-child){
-  margin-right: 50px;
+  margin-right: var(--margin50);
 }
 
 .contacts .link {
@@ -117,6 +124,9 @@ margin-left: auto;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-top: var(--padding32);
+  padding-bottom: var(--padding32);
 }
 
 /*Active */
@@ -136,9 +146,8 @@ margin-left: auto;
 .hero {
   background-color: var(--secondary-back);
 
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-bottom: 94px;
+  padding-top: var(--padding200);
+  padding-bottom: var(--padding200);
 
   text-align: center;
 
@@ -155,7 +164,7 @@ margin-left: auto;
   text-transform: uppercase;
 
   max-width: 700px;
-  padding-bottom: 30px;
+  padding-bottom: var(--padding30);
   margin: 0 auto;
 }
 
@@ -171,7 +180,7 @@ margin-left: auto;
   cursor: pointer;
 
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px var(--padding32);
   min-width: 200px;
 }
 
@@ -183,7 +192,7 @@ margin-left: auto;
 /* =========Section our advantage========== */
 
 .our-advantage{
-  margin-bottom: 94px;
+  padding-top: var(--padding94);
 }
 
 /*cant see */
@@ -205,7 +214,7 @@ display: flex;
 }
 
 .list-item:not(:last-child){
-  margin-right: 30px;
+  margin-right: var(--padding30);
 }
 
 .item-caption{
@@ -231,7 +240,8 @@ display: flex;
 /* =============What we do=================== */
 
 .what-we-do{
-  margin-bottom: 94px;
+  padding-top: var(--padding94);
+  padding-bottom: var(--padding94);
 }
 
 .section-caption {
@@ -241,39 +251,41 @@ display: flex;
   line-height: 1.16;
   text-align: center;
 
-  padding-bottom: 50px;
+  padding-bottom: var(--margin50);
 }
 
 .what-list{
   display: flex;
-  margin-right: -30px;
+  margin-right: calc(-1 * var(--padding30));
 }
 
 .what-item{
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
+  flex-basis: calc(100% / 3 - --padding30);
+  margin-right: var(--padding30);
 }
 
 .img{
   display: block;
-  padding: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ==========Section our team ===================*/
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
+  padding-top: var(--padding94);
+  padding-bottom: var(--padding94);
 }
 
 .team-list{
   display: flex;
-  margin-right: -30px;
+  margin-right: calc(-1 * var(--padding30));
 }
 
 .item-team{
-  flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
+  flex-basis: calc(100% / 4 - --padding30);
+  margin-right: var(--padding30);
   width: 270px;
   height: 368px;
   background-color: var(--secondary-accent);
@@ -282,7 +294,7 @@ display: flex;
 
 .team-padding{
   text-align: center;
-  padding: 30px;
+  padding: var(--padding30);
 
 }
 
@@ -308,8 +320,8 @@ display: flex;
 
 .footer {
   background-color: var(--secondary-back);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--padding60);
+  padding-bottom: var(--padding60);
 }
 .footer-logo{
 display: block;
@@ -346,8 +358,8 @@ margin-bottom: 20px;
 /* ==========Portfolio =================*/
 
 .our-works{
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: var(--padding94);
+  padding-bottom: var(--padding94);
 }
 
 .works-list{
@@ -387,14 +399,15 @@ margin-bottom: 20px;
 .gallery{
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-right: calc(-1 * var(--padding30));
+  margin-bottom: calc(-1 * var(--padding30));
 }
 
 .gallery-item{
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - calc(-1 * var(--padding30)));
+  margin-right: calc(-1 * var(--padding30));
+  margin-bottom: 3calc(-1 * var(--padding30));
+  border: 1px solid var(--sec-border-accent);
 }
 
 .gallery-ptext{
