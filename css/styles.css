@@ -10,6 +10,9 @@
   --border-accent:#ECECEC;
   --back-button:#f5f4fa;
   --sec-border-accent: #EEEEEE;
+  --margin9:9px;
+  --margin10:10px;
+  --margin30: 30px;
   --margin50:50px;
   --padding30:30px;
   --padding32: 32px;
@@ -57,11 +60,13 @@ ul {
 
 
 /* ===========HEADER=========== */
+.header-flex{
+  border-bottom: 1px solid var(--border-accent);
+}
 
-.header-flex {
+.header-flex .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-accent);
 }
 
 /* Logo */
@@ -164,8 +169,9 @@ margin-left: auto;
   text-transform: uppercase;
 
   max-width: 700px;
-  padding-bottom: var(--padding30);
-  margin: 0 auto;
+  margin-right: auto;
+  margin-bottom: var(--margin30);
+  margin-left: auto;
 }
 
 /* Button */
@@ -224,7 +230,7 @@ display: flex;
   line-height: 1.14;
   text-transform: uppercase;
 
-  padding-bottom: 10px;
+  margin-bottom: var(--margin10);
 }
 
 .item-text {
@@ -251,7 +257,7 @@ display: flex;
   line-height: 1.16;
   text-align: center;
 
-  padding-bottom: var(--margin50);
+  margin-bottom: var(--margin50);
 }
 
 .what-list{
@@ -304,6 +310,8 @@ display: flex;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin-bottom: var(--margin10);
 }
 
 .team-text {
@@ -332,6 +340,9 @@ margin-bottom: 20px;
   color: var(--secondary-accent);
 }
 
+.item-adress:not(:last-child){
+  margin-bottom: var(--margin9);
+}
 .item-adress .link {
   color: var(--secondary-accent);
 
@@ -341,7 +352,6 @@ margin-bottom: 20px;
   line-height: 1.71;
 
   display: block;
-  margin-bottom: 9px;
 }
 
 .link.adress {
@@ -364,7 +374,7 @@ margin-bottom: 20px;
 
 .works-list{
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: var(--margin50);
   justify-content: center;
 }
 
@@ -407,7 +417,6 @@ margin-bottom: 20px;
   flex-basis: calc(100% / 3 - var(--padding30));
   margin-right: var(--padding30);
   margin-bottom: var(--padding30);
-  border: 1px solid var(--sec-border-accent)
 }
 
 .gallery-ptext{
@@ -415,6 +424,9 @@ margin-bottom: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+  border-right: 1px solid var(--sec-border-accent);
+  border-bottom: 1px solid var(--sec-border-accent);
+  border-left: 1px solid var(--sec-border-accent);
 
 }
 
